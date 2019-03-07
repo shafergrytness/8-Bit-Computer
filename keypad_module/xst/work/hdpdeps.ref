@@ -1,0 +1,24 @@
+V3 14
+FL C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/key4_dbnc.vhd 2018/05/05.14:26:16 P.20131013
+EN work/key4_dbnc 1525560083 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/key4_dbnc.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/key4_dbnc/Behavioral 1525560084 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/key4_dbnc.vhd \
+      EN work/key4_dbnc 1525560083 CP switch_debounce
+FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.vhf 2018/05/05.15:24:00 P.20131013
+EN work/Debounce 1525560079 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Debounce/BEHAVIORAL 1525560080 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.vhf \
+      EN work/Debounce 1525560079 CP FD CP AND2B1
+FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/switch_debounce.vhf 2018/05/05.15:41:17 P.20131013
+EN work/switch_debounce 1525560081 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/switch_debounce.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/switch_debounce/BEHAVIORAL 1525560082 \
+      FL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/switch_debounce.vhf \
+      EN work/switch_debounce 1525560081 CP Debounce CP AND2B1

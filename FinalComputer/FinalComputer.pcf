@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 14 02:24:30 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Data_In" LOCATE = SITE "M4" LEVEL 1;
+COMP "Clock_B8" LOCATE = SITE "B8" LEVEL 1;
+COMP "colO<0>" LOCATE = SITE "C6" LEVEL 1;
+COMP "colO<1>" LOCATE = SITE "B6" LEVEL 1;
+COMP "colO<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "colO<3>" LOCATE = SITE "B7" LEVEL 1;
+COMP "Negative" LOCATE = SITE "P4" LEVEL 1;
+COMP "rowI<0>" LOCATE = SITE "B5" LEVEL 1;
+COMP "rowI<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "rowI<2>" LOCATE = SITE "A3" LEVEL 1;
+COMP "rowI<3>" LOCATE = SITE "B2" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Clock_LED" LOCATE = SITE "M5" LEVEL 1;
+COMP "Overflow" LOCATE = SITE "G1" LEVEL 1;
+COMP "Run_Mode" LOCATE = SITE "E2" LEVEL 1;
+COMP "AddrOrData" LOCATE = SITE "N3" LEVEL 1;
+COMP "anOut<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anOut<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anOut<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anOut<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "Clock_Switch" LOCATE = SITE "P11" LEVEL 1;
+COMP "Instruction_In" LOCATE = SITE "A7" LEVEL 1;
+NET "Clock_B8_BUFGP/IBUFG" BEL "Clock_B8_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

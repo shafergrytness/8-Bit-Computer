@@ -1,0 +1,3 @@
+vhdl work "Debounce.vhf"
+vhdl work "switch_debounce.vhf"
+vhdl work "../FinalComputer/key4_dbnc.vhd"

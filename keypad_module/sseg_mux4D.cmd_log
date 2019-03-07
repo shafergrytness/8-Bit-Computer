@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../FinalComputer/sseg_mux4D.vhd -prj keypad_module -o sseg_mux4D.spl -module sseg_mux4D -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e sseg_mux4D.spl C:/Users/Shafer/Desktop/FinalComputer/keypad_module/sseg_mux4D.sym 

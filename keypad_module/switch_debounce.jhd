@@ -1,0 +1,3 @@
+MODULE switch_debounce
+	SUBMODULE Debounce
+		INSTANCE XLXI_1

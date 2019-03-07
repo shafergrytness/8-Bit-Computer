@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Mux2to1_4Bit_Bus C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1_4Bit_Bus.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1_4Bit_Bus.sym 

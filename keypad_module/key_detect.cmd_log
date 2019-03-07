@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../FinalComputer/key_detect.vhd -prj keypad_module -o key_detect.spl -module key_detect -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e key_detect.spl C:/Users/Shafer/Desktop/FinalComputer/keypad_module/key_detect.sym 

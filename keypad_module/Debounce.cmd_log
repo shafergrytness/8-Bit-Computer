@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Debounce C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Debounce.sch C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.sym 

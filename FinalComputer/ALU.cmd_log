@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ALU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ALU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ALU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch} {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sym} 

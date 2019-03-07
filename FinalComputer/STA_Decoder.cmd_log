@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym STA_Decoder C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/STA_Decoder.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/STA_Decoder.sym 

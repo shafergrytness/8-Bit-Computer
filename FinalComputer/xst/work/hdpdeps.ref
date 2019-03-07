@@ -1,0 +1,696 @@
+V3 304
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" 2018/05/14.02:24:08 P.20131013
+EN work/Mux2to1_MUSER_ALU 1526289980 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_ALU/BEHAVIORAL 1526289981 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      EN work/Mux2to1_MUSER_ALU 1526289980 CP AND2 CP AND2B1 CP OR2
+EN work/FA_MUSER_ALU 1526289982 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_MUSER_ALU/BEHAVIORAL 1526289983 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      EN work/FA_MUSER_ALU 1526289982 CP NAND2
+EN work/FA_8Bit_MUSER_ALU 1526289984 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_8Bit_MUSER_ALU/BEHAVIORAL 1526289985 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      EN work/FA_8Bit_MUSER_ALU 1526289984 CP XOR2 CP NOR2 CP AND2 CP INV \
+      CP FA_MUSER_ALU
+EN work/ALU 1526289986 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU/BEHAVIORAL 1526289987 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf" \
+      EN work/ALU 1526289986 CP OR2 CP AND2 CP Mux2to1_MUSER_ALU CP AND3 CP OR4 \
+      CP FA_8Bit_MUSER_ALU CP AND2B1 CP PULLDOWN
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU_Decoder.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/ALU_Decoder 1526289988 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU_Decoder.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_Decoder/BEHAVIORAL 1526289989 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU_Decoder.vhf" \
+      EN work/ALU_Decoder 1526289988 CP AND5B4 CP AND4B3 CP OR2
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/bin2BCD3en (3).vhd" 2018/04/24.14:15:58 P.20131013
+EN work/bin2BCD3en 1526289858 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/bin2BCD3en (3).vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1526289859 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/bin2BCD3en (3).vhd" \
+      EN work/bin2BCD3en 1526289858
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" 2018/05/14.02:24:13 P.20131013
+EN work/Mux2to1_MUSER_CPU 1526289926 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_CPU/BEHAVIORAL 1526289927 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux2to1_MUSER_CPU 1526289926 CP AND2 CP AND2B1 CP OR2
+EN work/FA_MUSER_CPU 1526289928 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_MUSER_CPU/BEHAVIORAL 1526289929 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/FA_MUSER_CPU 1526289928 CP NAND2
+EN work/FA_8Bit_MUSER_CPU 1526289930 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_8Bit_MUSER_CPU/BEHAVIORAL 1526289931 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/FA_8Bit_MUSER_CPU 1526289930 CP XOR2 CP NOR2 CP AND2 CP INV \
+      CP FA_MUSER_CPU
+EN work/ALU_MUSER_CPU 1526289932 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_MUSER_CPU/BEHAVIORAL 1526289933 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/ALU_MUSER_CPU 1526289932 CP OR2 CP AND2 CP Mux2to1_MUSER_CPU CP AND3 \
+      CP OR4 CP FA_8Bit_MUSER_CPU CP AND2B1 CP PULLDOWN
+EN work/Mux2to1_4Bit_MUSER_CPU 1526289934 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_MUSER_CPU/BEHAVIORAL 1526289935 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux2to1_4Bit_MUSER_CPU 1526289934 CP Mux2to1_MUSER_CPU
+EN work/Mux2to1_8Bit_MUSER_CPU 1526289936 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_8Bit_MUSER_CPU/BEHAVIORAL 1526289937 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux2to1_8Bit_MUSER_CPU 1526289936 CP Mux2to1_4Bit_MUSER_CPU
+EN work/FD8RE_MXILINX_CPU 1526289938 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8RE_MXILINX_CPU/BEHAVIORAL 1526289939 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/FD8RE_MXILINX_CPU 1526289938 CP FDRE
+EN work/M2_1B1_MXILINX_CPU 1526289940 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_CPU/BEHAVIORAL 1526289941 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/M2_1B1_MXILINX_CPU 1526289940 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_CPU 1526289942 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_CPU/BEHAVIORAL 1526289943 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/M2_1_MXILINX_CPU 1526289942 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_CPU 1526289944 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_CPU/BEHAVIORAL 1526289945 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/FTCLEX_MXILINX_CPU 1526289944 CP M2_1_MXILINX_CPU CP XOR2 CP FDCE
+EN work/CB8CLED_MXILINX_CPU 1526289946 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB8CLED_MXILINX_CPU/BEHAVIORAL 1526289947 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/CB8CLED_MXILINX_CPU 1526289946 CP FTCLEX_MXILINX_CPU \
+      CP M2_1_MXILINX_CPU CP M2_1B1_MXILINX_CPU CP AND5 CP AND4 CP AND4B3 CP AND2B2 \
+      CP VCC CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 CP OR2
+EN work/FTCE_MXILINX_CPU 1526289948 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCE_MXILINX_CPU/BEHAVIORAL 1526289949 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/FTCE_MXILINX_CPU 1526289948 CP XOR2 CP FDCE
+EN work/CB2CE_MXILINX_CPU 1526289950 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB2CE_MXILINX_CPU/BEHAVIORAL 1526289951 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/CB2CE_MXILINX_CPU 1526289950 CP FTCE_MXILINX_CPU CP AND2 CP VCC
+EN work/OR7_MXILINX_CPU 1526289952 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR7_MXILINX_CPU/BEHAVIORAL 1526289953 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/OR7_MXILINX_CPU 1526289952 CP OR4 CP FMAP
+EN work/Instruction_Decoder_MUSER_CPU 1526289954 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Instruction_Decoder_MUSER_CPU/BEHAVIORAL 1526289955 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Instruction_Decoder_MUSER_CPU 1526289954 CP AND5B5 CP AND3B3 \
+      CP AND4B4 CP AND4B2 CP AND4B3 CP AND4B1 CP AND2 CP AND3B2 CP AND4
+EN work/ALU_Decoder_MUSER_CPU 1526289956 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_Decoder_MUSER_CPU/BEHAVIORAL 1526289957 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/ALU_Decoder_MUSER_CPU 1526289956 CP AND5B4 CP AND4B3 CP OR2
+EN work/Mux5to1_MUSER_CPU 1526289958 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_MUSER_CPU/BEHAVIORAL 1526289959 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux5to1_MUSER_CPU 1526289958 CP M2_1_MXILINX_CPU
+EN work/Mux5to1_4Bit_MUSER_CPU 1526289960 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_4Bit_MUSER_CPU/BEHAVIORAL 1526289961 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux5to1_4Bit_MUSER_CPU 1526289960 CP Mux5to1_MUSER_CPU
+EN work/Mux5to1_8Bit_MUSER_CPU 1526289962 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_8Bit_MUSER_CPU/BEHAVIORAL 1526289963 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/Mux5to1_8Bit_MUSER_CPU 1526289962 CP Mux5to1_4Bit_MUSER_CPU
+EN work/STA_Decoder_MUSER_CPU 1526289964 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/STA_Decoder_MUSER_CPU/BEHAVIORAL 1526289965 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/STA_Decoder_MUSER_CPU 1526289964 CP AND4B4 CP AND2 CP AND4B3 CP AND4B2
+EN work/CPU 1526289966 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CPU/BEHAVIORAL 1526289967 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf" \
+      EN work/CPU 1526289966 CP FD8RE_MXILINX_CPU CP FDRE CP sRAM32x8_generic \
+      CP PULLDOWN CP AND2 CP OR2B1 CP OR2 CP AND2B1 CP PULLUP \
+      CP Instruction_Decoder_MUSER_CPU CP OR7_MXILINX_CPU CP STA_Decoder_MUSER_CPU \
+      CP CB2CE_MXILINX_CPU CP CB8CLED_MXILINX_CPU CP OR3 CP OR4 \
+      CP ALU_Decoder_MUSER_CPU CP Mux5to1_8Bit_MUSER_CPU CP Mux2to1_8Bit_MUSER_CPU \
+      CP ALU_MUSER_CPU
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CRenc4bin (2).vhd" 2018/04/24.14:15:58 P.20131013
+EN work/CRenc4bin 1526289868 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CRenc4bin (2).vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CRenc4bin/Behavioral 1526289869 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CRenc4bin (2).vhd" \
+      EN work/CRenc4bin 1526289868
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/DCM_50M (2).vhd" 2018/04/24.14:15:58 P.20131013
+EN work/DCM_50M 1526289860 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/DCM_50M (2).vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1526289861 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/DCM_50M (2).vhd" \
+      EN work/DCM_50M 1526289860
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Debounce.vhf" 2018/05/14.02:08:19 P.20131013
+EN work/Debounce 1526289990 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Debounce.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Debounce/BEHAVIORAL 1526289991 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Debounce.vhf" \
+      EN work/Debounce 1526289990 CP FD CP AND2B1
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA.vhf" 2018/05/14.02:08:16 P.20131013
+EN work/FA 1526290028 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA/BEHAVIORAL 1526290029 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA.vhf" \
+      EN work/FA 1526290028 CP NAND2
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA_8Bit.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/FA_MUSER_FA_8Bit 1526290014 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_MUSER_FA_8Bit/BEHAVIORAL 1526290015 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA_8Bit.vhf" \
+      EN work/FA_MUSER_FA_8Bit 1526290014 CP NAND2
+EN work/FA_8Bit 1526290016 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_8Bit/BEHAVIORAL 1526290017 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FA_8Bit.vhf" \
+      EN work/FA_8Bit 1526290016 CP XOR2 CP NOR2 CP AND2 CP INV CP FA_MUSER_FA_8Bit
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" 2018/05/14.02:24:16 P.20131013
+EN work/Mux2to1_MUSER_FinalComputer 1526289872 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_FinalComputer/BEHAVIORAL 1526289873 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux2to1_MUSER_FinalComputer 1526289872 CP AND2 CP AND2B1 CP OR2
+EN work/FA_MUSER_FinalComputer 1526289874 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_MUSER_FinalComputer/BEHAVIORAL 1526289875 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FA_MUSER_FinalComputer 1526289874 CP NAND2
+EN work/FA_8Bit_MUSER_FinalComputer 1526289876 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FA_8Bit_MUSER_FinalComputer/BEHAVIORAL 1526289877 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FA_8Bit_MUSER_FinalComputer 1526289876 CP XOR2 CP NOR2 CP AND2 CP INV \
+      CP FA_MUSER_FinalComputer
+EN work/ALU_MUSER_FinalComputer 1526289878 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_MUSER_FinalComputer/BEHAVIORAL 1526289879 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/ALU_MUSER_FinalComputer 1526289878 CP OR2 CP AND2 \
+      CP Mux2to1_MUSER_FinalComputer CP AND3 CP OR4 CP FA_8Bit_MUSER_FinalComputer \
+      CP AND2B1 CP PULLDOWN
+EN work/Mux2to1_4Bit_MUSER_FinalComputer 1526289880 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_MUSER_FinalComputer/BEHAVIORAL 1526289881 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux2to1_4Bit_MUSER_FinalComputer 1526289880 \
+      CP Mux2to1_MUSER_FinalComputer
+EN work/Mux2to1_8Bit_MUSER_FinalComputer 1526289882 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_8Bit_MUSER_FinalComputer/BEHAVIORAL 1526289883 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux2to1_8Bit_MUSER_FinalComputer 1526289882 \
+      CP Mux2to1_4Bit_MUSER_FinalComputer
+EN work/FD8RE_MXILINX_FinalComputer 1526289884 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8RE_MXILINX_FinalComputer/BEHAVIORAL 1526289885 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FD8RE_MXILINX_FinalComputer 1526289884 CP FDRE
+EN work/M2_1B1_MXILINX_FinalComputer 1526289886 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_FinalComputer/BEHAVIORAL 1526289887 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/M2_1B1_MXILINX_FinalComputer 1526289886 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_FinalComputer 1526289888 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_FinalComputer/BEHAVIORAL 1526289889 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/M2_1_MXILINX_FinalComputer 1526289888 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_FinalComputer 1526289890 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_FinalComputer/BEHAVIORAL 1526289891 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FTCLEX_MXILINX_FinalComputer 1526289890 \
+      CP M2_1_MXILINX_FinalComputer CP XOR2 CP FDCE
+EN work/CB8CLED_MXILINX_FinalComputer 1526289892 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB8CLED_MXILINX_FinalComputer/BEHAVIORAL 1526289893 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/CB8CLED_MXILINX_FinalComputer 1526289892 \
+      CP FTCLEX_MXILINX_FinalComputer CP M2_1_MXILINX_FinalComputer \
+      CP M2_1B1_MXILINX_FinalComputer CP AND5 CP AND4 CP AND4B3 CP AND2B2 CP VCC \
+      CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 CP OR2
+EN work/FTCE_MXILINX_FinalComputer 1526289894 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCE_MXILINX_FinalComputer/BEHAVIORAL 1526289895 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FTCE_MXILINX_FinalComputer 1526289894 CP XOR2 CP FDCE
+EN work/CB2CE_MXILINX_FinalComputer 1526289896 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB2CE_MXILINX_FinalComputer/BEHAVIORAL 1526289897 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/CB2CE_MXILINX_FinalComputer 1526289896 \
+      CP FTCE_MXILINX_FinalComputer CP AND2 CP VCC
+EN work/OR7_MXILINX_FinalComputer 1526289898 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR7_MXILINX_FinalComputer/BEHAVIORAL 1526289899 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/OR7_MXILINX_FinalComputer 1526289898 CP OR4 CP FMAP
+EN work/Instruction_Decoder_MUSER_FinalComputer 1526289900 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Instruction_Decoder_MUSER_FinalComputer/BEHAVIORAL 1526289901 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Instruction_Decoder_MUSER_FinalComputer 1526289900 CP AND5B5 \
+      CP AND3B3 CP AND4B4 CP AND4B2 CP AND4B3 CP AND4B1 CP AND2 CP AND3B2 CP AND4
+EN work/ALU_Decoder_MUSER_FinalComputer 1526289902 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_Decoder_MUSER_FinalComputer/BEHAVIORAL 1526289903 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/ALU_Decoder_MUSER_FinalComputer 1526289902 CP AND5B4 CP AND4B3 CP OR2
+EN work/Mux5to1_MUSER_FinalComputer 1526289904 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_MUSER_FinalComputer/BEHAVIORAL 1526289905 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux5to1_MUSER_FinalComputer 1526289904 \
+      CP M2_1_MXILINX_FinalComputer
+EN work/Mux5to1_4Bit_MUSER_FinalComputer 1526289906 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_4Bit_MUSER_FinalComputer/BEHAVIORAL 1526289907 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux5to1_4Bit_MUSER_FinalComputer 1526289906 \
+      CP Mux5to1_MUSER_FinalComputer
+EN work/Mux5to1_8Bit_MUSER_FinalComputer 1526289908 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_8Bit_MUSER_FinalComputer/BEHAVIORAL 1526289909 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux5to1_8Bit_MUSER_FinalComputer 1526289908 \
+      CP Mux5to1_4Bit_MUSER_FinalComputer
+EN work/STA_Decoder_MUSER_FinalComputer 1526289910 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/STA_Decoder_MUSER_FinalComputer/BEHAVIORAL 1526289911 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/STA_Decoder_MUSER_FinalComputer 1526289910 CP AND4B4 CP AND2 \
+      CP AND4B3 CP AND4B2
+EN work/CPU_MUSER_FinalComputer 1526289912 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CPU_MUSER_FinalComputer/BEHAVIORAL 1526289913 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/CPU_MUSER_FinalComputer 1526289912 CP FD8RE_MXILINX_FinalComputer \
+      CP FDRE CP sRAM32x8_generic CP PULLDOWN CP AND2 CP OR2B1 CP OR2 CP AND2B1 \
+      CP PULLUP CP Instruction_Decoder_MUSER_FinalComputer \
+      CP OR7_MXILINX_FinalComputer CP STA_Decoder_MUSER_FinalComputer \
+      CP CB2CE_MXILINX_FinalComputer CP CB8CLED_MXILINX_FinalComputer CP OR3 CP OR4 \
+      CP ALU_Decoder_MUSER_FinalComputer CP Mux5to1_8Bit_MUSER_FinalComputer \
+      CP Mux2to1_8Bit_MUSER_FinalComputer CP ALU_MUSER_FinalComputer
+EN work/Mux2to1_4Bit_Bus_MUSER_FinalComputer 1526289914 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_Bus_MUSER_FinalComputer/BEHAVIORAL 1526289915 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Mux2to1_4Bit_Bus_MUSER_FinalComputer 1526289914 \
+      CP Mux2to1_MUSER_FinalComputer
+EN work/Sseg_Display_MUSER_FinalComputer 1526289916 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Sseg_Display_MUSER_FinalComputer/BEHAVIORAL 1526289917 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Sseg_Display_MUSER_FinalComputer 1526289916 CP bin2BCD3en CP DCM_50M \
+      CP sel_strobeB CP mux4SSD CP PULLUP CP SSD_1dig CP PULLDOWN CP INV \
+      CP Mux2to1_4Bit_Bus_MUSER_FinalComputer
+EN work/Debounce_MUSER_FinalComputer 1526289918 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Debounce_MUSER_FinalComputer/BEHAVIORAL 1526289919 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Debounce_MUSER_FinalComputer 1526289918 CP FD CP AND2B1
+EN work/FD4RE_MXILINX_FinalComputer 1526289920 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD4RE_MXILINX_FinalComputer/BEHAVIORAL 1526289921 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FD4RE_MXILINX_FinalComputer 1526289920 CP FDRE
+EN work/Program_Mode_MUSER_FinalComputer 1526289922 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Program_Mode_MUSER_FinalComputer/BEHAVIORAL 1526289923 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/Program_Mode_MUSER_FinalComputer 1526289922 \
+      CP FD4RE_MXILINX_FinalComputer CP PULLDOWN CP AND2 CP INV \
+      CP Debounce_MUSER_FinalComputer CP CRenc4bin
+EN work/FinalComputer 1526289924 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FinalComputer/BEHAVIORAL 1526289925 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf" \
+      EN work/FinalComputer 1526289924 CP DCM_50M \
+      CP Program_Mode_MUSER_FinalComputer CP PULLDOWN \
+      CP Mux2to1_MUSER_FinalComputer CP Sseg_Display_MUSER_FinalComputer \
+      CP CPU_MUSER_FinalComputer
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Instruction_Decoder.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/Instruction_Decoder 1526289992 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Instruction_Decoder.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Instruction_Decoder/BEHAVIORAL 1526289993 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Instruction_Decoder.vhf" \
+      EN work/Instruction_Decoder 1526289992 CP AND5B5 CP AND3B3 CP AND4B4 CP AND4B2 \
+      CP AND4B3 CP AND4B1 CP AND2 CP AND3B2 CP AND4
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/Mux2to1 1526290030 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1/BEHAVIORAL 1526290031 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1.vhf" \
+      EN work/Mux2to1 1526290030 CP AND2 CP AND2B1 CP OR2
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit.vhf" 2018/05/14.02:08:22 P.20131013
+EN work/Mux2to1_MUSER_Mux2to1_4Bit 1526290018 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_Mux2to1_4Bit/BEHAVIORAL 1526290019 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit.vhf" \
+      EN work/Mux2to1_MUSER_Mux2to1_4Bit 1526290018 CP AND2 CP AND2B1 CP OR2
+EN work/Mux2to1_4Bit 1526290020 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit/BEHAVIORAL 1526290021 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit.vhf" \
+      EN work/Mux2to1_4Bit 1526290020 CP Mux2to1_MUSER_Mux2to1_4Bit
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit_Bus.vhf" 2018/05/14.02:08:19 P.20131013
+EN work/Mux2to1_MUSER_Mux2to1_4Bit_Bus 1526289994 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit_Bus.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_Mux2to1_4Bit_Bus/BEHAVIORAL 1526289995 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit_Bus.vhf" \
+      EN work/Mux2to1_MUSER_Mux2to1_4Bit_Bus 1526289994 CP AND2 CP AND2B1 CP OR2
+EN work/Mux2to1_4Bit_Bus 1526289996 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit_Bus.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_Bus/BEHAVIORAL 1526289997 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_4Bit_Bus.vhf" \
+      EN work/Mux2to1_4Bit_Bus 1526289996 CP Mux2to1_MUSER_Mux2to1_4Bit_Bus
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" 2018/05/14.02:08:20 P.20131013
+EN work/Mux2to1_MUSER_Mux2to1_8Bit 1526289998 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_Mux2to1_8Bit/BEHAVIORAL 1526289999 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      EN work/Mux2to1_MUSER_Mux2to1_8Bit 1526289998 CP AND2 CP AND2B1 CP OR2
+EN work/Mux2to1_4Bit_MUSER_Mux2to1_8Bit 1526290000 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_MUSER_Mux2to1_8Bit/BEHAVIORAL 1526290001 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      EN work/Mux2to1_4Bit_MUSER_Mux2to1_8Bit 1526290000 \
+      CP Mux2to1_MUSER_Mux2to1_8Bit
+EN work/Mux2to1_8Bit 1526290002 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_8Bit/BEHAVIORAL 1526290003 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux2to1_8Bit.vhf" \
+      EN work/Mux2to1_8Bit 1526290002 CP Mux2to1_4Bit_MUSER_Mux2to1_8Bit
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/mux4SSD (1).vhd" 2018/04/24.14:16:02 P.20131013
+EN work/mux4SSD 1526289864 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/mux4SSD (1).vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1526289865 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/mux4SSD (1).vhd" \
+      EN work/mux4SSD 1526289864
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/M2_1_MXILINX_Mux5to1 1526290032 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_Mux5to1/BEHAVIORAL 1526290033 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1.vhf" \
+      EN work/M2_1_MXILINX_Mux5to1 1526290032 CP AND2B1 CP OR2 CP AND2
+EN work/Mux5to1 1526290034 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1/BEHAVIORAL 1526290035 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1.vhf" \
+      EN work/Mux5to1 1526290034 CP M2_1_MXILINX_Mux5to1
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" 2018/05/14.02:08:22 P.20131013
+EN work/M2_1_MXILINX_Mux5to1_4Bit 1526290022 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_Mux5to1_4Bit/BEHAVIORAL 1526290023 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      EN work/M2_1_MXILINX_Mux5to1_4Bit 1526290022 CP AND2B1 CP OR2 CP AND2
+EN work/Mux5to1_MUSER_Mux5to1_4Bit 1526290024 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_MUSER_Mux5to1_4Bit/BEHAVIORAL 1526290025 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      EN work/Mux5to1_MUSER_Mux5to1_4Bit 1526290024 CP M2_1_MXILINX_Mux5to1_4Bit
+EN work/Mux5to1_4Bit 1526290026 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_4Bit/BEHAVIORAL 1526290027 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_4Bit.vhf" \
+      EN work/Mux5to1_4Bit 1526290026 CP Mux5to1_MUSER_Mux5to1_4Bit
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" 2018/05/14.02:08:20 P.20131013
+EN work/M2_1_MXILINX_Mux5to1_8Bit 1526290004 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_Mux5to1_8Bit/BEHAVIORAL 1526290005 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      EN work/M2_1_MXILINX_Mux5to1_8Bit 1526290004 CP AND2B1 CP OR2 CP AND2
+EN work/Mux5to1_MUSER_Mux5to1_8Bit 1526290006 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_MUSER_Mux5to1_8Bit/BEHAVIORAL 1526290007 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      EN work/Mux5to1_MUSER_Mux5to1_8Bit 1526290006 CP M2_1_MXILINX_Mux5to1_8Bit
+EN work/Mux5to1_4Bit_MUSER_Mux5to1_8Bit 1526290008 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_4Bit_MUSER_Mux5to1_8Bit/BEHAVIORAL 1526290009 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      EN work/Mux5to1_4Bit_MUSER_Mux5to1_8Bit 1526290008 \
+      CP Mux5to1_MUSER_Mux5to1_8Bit
+EN work/Mux5to1_8Bit 1526290010 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux5to1_8Bit/BEHAVIORAL 1526290011 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Mux5to1_8Bit.vhf" \
+      EN work/Mux5to1_8Bit 1526290010 CP Mux5to1_4Bit_MUSER_Mux5to1_8Bit
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" 2018/05/14.02:08:22 P.20131013
+EN work/Debounce_MUSER_Program_Mode 1526289968 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Debounce_MUSER_Program_Mode/BEHAVIORAL 1526289969 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      EN work/Debounce_MUSER_Program_Mode 1526289968 CP FD CP AND2B1
+EN work/FD4RE_MXILINX_Program_Mode 1526289970 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD4RE_MXILINX_Program_Mode/BEHAVIORAL 1526289971 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      EN work/FD4RE_MXILINX_Program_Mode 1526289970 CP FDRE
+EN work/Program_Mode 1526289972 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Program_Mode/BEHAVIORAL 1526289973 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Program_Mode.vhf" \
+      EN work/Program_Mode 1526289972 CP FD4RE_MXILINX_Program_Mode CP PULLDOWN \
+      CP AND2 CP INV CP Debounce_MUSER_Program_Mode CP CRenc4bin
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sel_strobeB.vhd" 2018/04/24.14:16:02 P.20131013
+EN work/sel_strobeB 1526289862 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sel_strobeB.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1526289863 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sel_strobeB.vhd" \
+      EN work/sel_strobeB 1526289862
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sRAM32x8_generic.vhd" 2018/04/24.14:16:03 P.20131013
+EN work/sRAM32x8_generic 1526289870 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sRAM32x8_generic.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/sRAM32x8_generic/Behavioral 1526289871 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/sRAM32x8_generic.vhd" \
+      EN work/sRAM32x8_generic 1526289870
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/SSD_1dig.vhd" 2018/04/24.14:16:03 P.20131013
+EN work/SSD_1dig 1526289866 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/SSD_1dig.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1526289867 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/SSD_1dig.vhd" \
+      EN work/SSD_1dig 1526289866
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" 2018/05/14.02:08:17 P.20131013
+EN work/Mux2to1_MUSER_Sseg_Display 1526289974 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_MUSER_Sseg_Display/BEHAVIORAL 1526289975 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      EN work/Mux2to1_MUSER_Sseg_Display 1526289974 CP AND2 CP AND2B1 CP OR2
+EN work/Mux2to1_4Bit_Bus_MUSER_Sseg_Display 1526289976 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mux2to1_4Bit_Bus_MUSER_Sseg_Display/BEHAVIORAL 1526289977 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      EN work/Mux2to1_4Bit_Bus_MUSER_Sseg_Display 1526289976 \
+      CP Mux2to1_MUSER_Sseg_Display
+EN work/Sseg_Display 1526289978 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Sseg_Display/BEHAVIORAL 1526289979 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/Sseg_Display.vhf" \
+      EN work/Sseg_Display 1526289978 CP bin2BCD3en CP DCM_50M CP sel_strobeB \
+      CP mux4SSD CP PULLUP CP SSD_1dig CP PULLDOWN CP INV \
+      CP Mux2to1_4Bit_Bus_MUSER_Sseg_Display
+FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/STA_Decoder.vhf" 2018/05/14.02:08:19 P.20131013
+EN work/STA_Decoder 1526290012 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/STA_Decoder.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/STA_Decoder/BEHAVIORAL 1526290013 \
+      FL "C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/STA_Decoder.vhf" \
+      EN work/STA_Decoder 1526290012 CP AND4B4 CP AND2 CP AND4B3 CP AND4B2

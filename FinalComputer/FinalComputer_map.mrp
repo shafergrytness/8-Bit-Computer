@@ -1,0 +1,415 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'FinalComputer'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o FinalComputer_map.ncd FinalComputer.ngd FinalComputer.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon May 14 02:24:29 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:           794 out of   1,920   41%
+  Number of 4 input LUTs:               846 out of   1,920   44%
+Logic Distribution:
+  Number of occupied Slices:            814 out of     960   84%
+    Number of Slices containing only related logic:     814 out of     814 100%
+    Number of Slices containing unrelated logic:          0 out of     814   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,009 out of   1,920   52%
+    Number used as logic:               846
+    Number used as a route-thru:        163
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 28 out of      83   33%
+  Number of BUFGMUXs:                     5 out of      24   20%
+
+  Number of RPM macros:            8
+Average Fanout of Non-Clock Nets:                2.72
+
+Peak Memory Usage:  214 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	XLXI_19/XLXI_2/Mcompar_cnt1M_cmp_ge0000_cy<10>
+   	XLXI_19/XLXI_2/Mcount_cnt1M_cy<0>
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	XLXI_1/Mcompar_cnt1M_cmp_ge0000_cy<10>
+   	XLXI_1/Mcount_cnt1M_cy<0>
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXI_23/XLXI_87/CEO has no load.
+INFO:LIT:395 - The above info message is repeated 9 more times for the following
+   (max. 5 shown):
+   XLXI_23/XLXI_86/CEO,
+   XLXI_23/B_Reg/Q<0>,
+   XLXI_23/B_Reg/Q<1>,
+   XLXI_23/B_Reg/Q<2>,
+   XLXI_23/B_Reg/Q<3>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  69 block(s) removed
+  53 block(s) optimized away
+  65 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_7/XLXI_3" (OR) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_7/XLXN_2" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_7/XLXI_2" (AND) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_7/XLXN_1" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_7/XLXI_1" (AND) removed.
+   The signal "XLXI_23/XLXN_933<5>" is loadless and has been removed.
+    Loadless block "XLXI_23/XLXI_87/I_Q5/I_36_35" (FF) removed.
+     The signal "XLXI_23/XLXI_87/I_Q5/MD" is loadless and has been removed.
+      Loadless block "XLXI_23/XLXI_87/I_Q5/I_36_30/I_36_8" (OR) removed.
+       The signal "XLXI_23/XLXI_87/I_Q5/I_36_30/M1" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q5/I_36_30/I_36_9" (AND) removed.
+         The signal "XLXI_23/XLXN_105<5>" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_62_5" (PULLDOWN) removed.
+       The signal "XLXI_23/XLXI_87/I_Q5/I_36_30/M0" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q5/I_36_30/I_36_7" (AND) removed.
+         The signal "XLXI_23/XLXI_87/I_Q5/TQ" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_87/I_Q5/I_36_32" (XOR) removed.
+           The signal "XLXI_23/XLXI_87/T5" is loadless and has been removed.
+            Loadless block "XLXI_23/XLXI_87/I_T5/I_36_8" (OR) removed.
+             The signal "XLXI_23/XLXI_87/I_T5/M1" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T5/I_36_9" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T5_UP" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_52" (AND) removed.
+             The signal "XLXI_23/XLXI_87/I_T5/M0" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T5/I_36_7" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T5_DN" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_40" (AND) removed.
+Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_8/XLXI_3" (OR) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_8/XLXN_2" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_8/XLXI_2" (AND) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_8/XLXN_1" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_8/XLXI_1" (AND) removed.
+   The signal "XLXI_23/XLXN_933<6>" is loadless and has been removed.
+    Loadless block "XLXI_23/XLXI_87/I_Q6/I_36_35" (FF) removed.
+     The signal "XLXI_23/XLXI_87/I_Q6/MD" is loadless and has been removed.
+      Loadless block "XLXI_23/XLXI_87/I_Q6/I_36_30/I_36_8" (OR) removed.
+       The signal "XLXI_23/XLXI_87/I_Q6/I_36_30/M1" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q6/I_36_30/I_36_9" (AND) removed.
+         The signal "XLXI_23/XLXN_105<6>" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_62_6" (PULLDOWN) removed.
+       The signal "XLXI_23/XLXI_87/I_Q6/I_36_30/M0" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q6/I_36_30/I_36_7" (AND) removed.
+         The signal "XLXI_23/XLXI_87/I_Q6/TQ" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_87/I_Q6/I_36_32" (XOR) removed.
+           The signal "XLXI_23/XLXI_87/T6" is loadless and has been removed.
+            Loadless block "XLXI_23/XLXI_87/I_T6/I_36_8" (OR) removed.
+             The signal "XLXI_23/XLXI_87/I_T6/M1" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T6/I_36_9" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T6_UP" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_41" (AND) removed.
+             The signal "XLXI_23/XLXI_87/I_T6/M0" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T6/I_36_7" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T6_DN" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_42" (AND) removed.
+Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_9/XLXI_3" (OR) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_9/XLXN_2" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_9/XLXI_2" (AND) removed.
+ The signal "XLXI_23/XLXI_135/XLXI_2/XLXI_9/XLXN_1" is loadless and has been
+removed.
+  Loadless block "XLXI_23/XLXI_135/XLXI_2/XLXI_9/XLXI_1" (AND) removed.
+   The signal "XLXI_23/XLXN_933<7>" is loadless and has been removed.
+    Loadless block "XLXI_23/XLXI_87/I_Q7/I_36_35" (FF) removed.
+     The signal "XLXI_23/XLXI_87/I_Q7/MD" is loadless and has been removed.
+      Loadless block "XLXI_23/XLXI_87/I_Q7/I_36_30/I_36_8" (OR) removed.
+       The signal "XLXI_23/XLXI_87/I_Q7/I_36_30/M1" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q7/I_36_30/I_36_9" (AND) removed.
+         The signal "XLXI_23/XLXN_105<7>" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_62_7" (PULLDOWN) removed.
+       The signal "XLXI_23/XLXI_87/I_Q7/I_36_30/M0" is loadless and has been removed.
+        Loadless block "XLXI_23/XLXI_87/I_Q7/I_36_30/I_36_7" (AND) removed.
+         The signal "XLXI_23/XLXI_87/I_Q7/TQ" is loadless and has been removed.
+          Loadless block "XLXI_23/XLXI_87/I_Q7/I_36_32" (XOR) removed.
+           The signal "XLXI_23/XLXI_87/T7" is loadless and has been removed.
+            Loadless block "XLXI_23/XLXI_87/I_T7/I_36_8" (OR) removed.
+             The signal "XLXI_23/XLXI_87/I_T7/M1" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T7/I_36_9" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T7_UP" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_33" (AND) removed.
+             The signal "XLXI_23/XLXI_87/I_T7/M0" is loadless and has been removed.
+              Loadless block "XLXI_23/XLXI_87/I_T7/I_36_7" (AND) removed.
+               The signal "XLXI_23/XLXI_87/T7_DN" is loadless and has been removed.
+                Loadless block "XLXI_23/XLXI_87/I_36_34" (AND) removed.
+Loadless block "XLXI_23/XLXI_140/XLXI_66/XLXI_73/XLXI_11" (AND) removed.
+Loadless block "XLXI_23/XLXI_64/XLXI_11" (AND) removed.
+ The signal "XLXI_23/XLXI_64/XLXN_9" is loadless and has been removed.
+  Loadless block "XLXI_23/XLXI_64/XLXI_1" (AND) removed.
+ The signal "XLXI_23/XLXI_64/XLXN_166" is loadless and has been removed.
+  Loadless block "XLXI_23/XLXI_64/XLXI_2" (AND) removed.
+Loadless block "XLXI_23/XLXI_64/XLXI_13" (AND) removed.
+ The signal "XLXI_23/XLXI_64/XLXN_15" is loadless and has been removed.
+  Loadless block "XLXI_23/XLXI_64/XLXI_4" (AND) removed.
+ The signal "XLXI_23/XLXI_64/XLXN_172" is loadless and has been removed.
+  Loadless block "XLXI_23/XLXI_64/XLXI_5" (AND) removed.
+The signal "XLXI_23/XLXI_87/CEO" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_87/T2_DN" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_87/T3_DN" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_87/T4_DN" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_87/TC" is sourceless and has been removed.
+ Sourceless block "XLXI_23/XLXI_87/I_36_63" (AND) removed.
+The signal "XLXI_23/XLXI_87/TC_DN" is sourceless and has been removed.
+ Sourceless block "XLXI_23/XLXI_87/I_TC/I_36_7" (AND) removed.
+  The signal "XLXI_23/XLXI_87/I_TC/M0" is sourceless and has been removed.
+   Sourceless block "XLXI_23/XLXI_87/I_TC/I_36_8" (OR) removed.
+The signal "XLXI_23/XLXI_87/TC_UP" is sourceless and has been removed.
+ Sourceless block "XLXI_23/XLXI_87/I_TC/I_36_9" (AND) removed.
+  The signal "XLXI_23/XLXI_87/I_TC/M1" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_86/CEO" is sourceless and has been removed.
+The signal "XLXI_23/XLXI_86/TC" is sourceless and has been removed.
+ Sourceless block "XLXI_23/XLXI_86/I_36_52" (AND) removed.
+The signal "XLXI_23/B_Reg/Q<0>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<1>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<2>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<3>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<4>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<5>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<6>" is sourceless and has been removed.
+The signal "XLXI_23/B_Reg/Q<7>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "XLXI_1/RST_inv" is unused and has been removed.
+The signal "XLXI_19/XLXI_2/RST_inv" is unused and has been removed.
+The signal "XLXI_23/XLXN_207" is unused and has been removed.
+ Unused block "XLXI_23/XLXI_65" (AND) removed.
+Unused block "XLXI_23/B_Reg/I_Q0" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q1" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q2" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q3" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q4" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q5" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q6" (SFF) removed.
+Unused block "XLXI_23/B_Reg/I_Q7" (SFF) removed.
+Unused block "XLXI_23/XLXI_86/I_36_37" (AND) removed.
+Unused block "XLXI_23/XLXI_87/I_36_31" (AND) removed.
+Unused block "XLXI_23/XLXI_87/I_36_36" (AND) removed.
+Unused block "XLXI_23/XLXI_87/I_36_46" (AND) removed.
+Unused block "XLXI_23/XLXI_87/I_36_47" (AND) removed.
+Unused block "XLXI_23/XLXI_87/I_36_55" (AND) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+INV 		XLXI_1/RST_inv1_INV_0
+PULLDOWN 		XLXI_14
+PULLUP 		XLXI_19/XLXI_11
+PULLDOWN 		XLXI_19/XLXI_17
+INV 		XLXI_19/XLXI_2/RST_inv1_INV_0
+AND2 		XLXI_19/XLXI_24/XLXI_10/XLXI_1
+AND2 		XLXI_19/XLXI_24/XLXI_9/XLXI_1
+AND2 		XLXI_19/XLXI_25/XLXI_10/XLXI_1
+AND2 		XLXI_19/XLXI_25/XLXI_5/XLXI_1
+AND2 		XLXI_19/XLXI_25/XLXI_8/XLXI_1
+AND2 		XLXI_19/XLXI_25/XLXI_9/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_73/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_73/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_74/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_74/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_75/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_75/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_76/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_76/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_77/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_77/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_78/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_78/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_79/XLXI_1
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_79/XLXI_3
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_80/XLXI_5
+NAND2 		XLXI_23/XLXI_140/XLXI_66/XLXI_80/XLXI_7
+AND2 		XLXI_23/XLXI_140/XLXI_86/XLXI_1
+AND2 		XLXI_23/XLXI_140/XLXI_87/XLXI_1
+PULLDOWN 		XLXI_23/XLXI_140/XLXI_89
+AND2 		XLXI_23/XLXI_140/XLXI_90/XLXI_1
+AND2 		XLXI_23/XLXI_140/XLXI_92/XLXI_1
+PULLDOWN 		XLXI_23/XLXI_140/XLXI_93
+PULLUP 		XLXI_23/XLXI_61
+PULLDOWN 		XLXI_23/XLXI_62_0
+PULLDOWN 		XLXI_23/XLXI_62_1
+PULLDOWN 		XLXI_23/XLXI_62_2
+PULLDOWN 		XLXI_23/XLXI_62_3
+PULLDOWN 		XLXI_23/XLXI_62_4
+PULLDOWN 		XLXI_23/XLXI_8
+VCC 		XLXI_23/XLXI_86/I_36_47
+VCC 		XLXI_23/XLXI_87/I_36_38
+AND2 		XLXI_23/XLXI_87/I_Q0/I_36_30/I_36_9
+AND2 		XLXI_23/XLXI_87/I_Q1/I_36_30/I_36_9
+AND2 		XLXI_23/XLXI_87/I_Q2/I_36_30/I_36_9
+AND2 		XLXI_23/XLXI_87/I_Q3/I_36_30/I_36_9
+AND2 		XLXI_23/XLXI_87/I_Q4/I_36_30/I_36_9
+AND2B2 		XLXI_23/XLXI_87/I_T1/I_36_7
+AND2B1 		XLXI_23/XLXI_87/I_T2/I_36_7
+AND2B1 		XLXI_23/XLXI_87/I_T3/I_36_7
+AND2B1 		XLXI_23/XLXI_87/I_T4/I_36_7
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AddrOrData                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Clock_B8                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Clock_LED                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Clock_Switch                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Data_In                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Instruction_In                     | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Negative                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Overflow                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Run_Mode                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| anOut<0>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anOut<1>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anOut<2>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anOut<3>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| rowI<0>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| rowI<1>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| rowI<2>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| rowI<3>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| sseg<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+XLXI_23/XLXI_86/XLXI_86_I_Q0_126        
+XLXI_23/XLXI_86/XLXI_86_I_Q1_127        
+XLXI_23/XLXI_87/XLXI_87_I_Q0_117        
+XLXI_23/XLXI_87/XLXI_87_I_Q1_116        
+XLXI_23/XLXI_87/XLXI_87_I_Q2_115        
+XLXI_23/XLXI_87/XLXI_87_I_Q3_114        
+XLXI_23/XLXI_87/XLXI_87_I_Q4_113        
+XLXI_23_XLXI_70_138                     
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

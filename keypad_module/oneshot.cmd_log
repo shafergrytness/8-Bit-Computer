@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../FinalComputer/oneshot.vhd -prj keypad_module -o oneshot.spl -module oneshot -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e oneshot.spl C:/Users/Shafer/Desktop/FinalComputer/keypad_module/oneshot.sym 

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym FA_8Bit C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA_8Bit.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA_8Bit.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA_8Bit C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA_8Bit.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA_8Bit.sym 

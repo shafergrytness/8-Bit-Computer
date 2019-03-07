@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.vhf,-w,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf,-w,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf,-w,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.vhf,-w,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.vhf,-w,C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/FinalComputer.sch

@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl FA_drc.vhf -w C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/FA.sch 

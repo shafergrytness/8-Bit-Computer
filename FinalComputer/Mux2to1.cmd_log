@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym Mux2to1 C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Mux2to1 C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Mux2to1.sym 

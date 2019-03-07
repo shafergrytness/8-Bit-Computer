@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Decoder C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/ALU_Decoder.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/ALU_Decoder.sym 

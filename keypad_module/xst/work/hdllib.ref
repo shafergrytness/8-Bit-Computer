@@ -1,0 +1,6 @@
+AR switch_debounce behavioral C:/Users/Shafer/Desktop/FinalComputer/keypad_module/switch_debounce.vhf sub00/vhpl03 1525560082
+AR debounce behavioral C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.vhf sub00/vhpl01 1525560080
+AR key4_dbnc behavioral C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/key4_dbnc.vhd sub00/vhpl05 1525560084
+EN debounce NULL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/Debounce.vhf sub00/vhpl00 1525560079
+EN key4_dbnc NULL C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/key4_dbnc.vhd sub00/vhpl04 1525560083
+EN switch_debounce NULL C:/Users/Shafer/Desktop/FinalComputer/keypad_module/switch_debounce.vhf sub00/vhpl02 1525560081

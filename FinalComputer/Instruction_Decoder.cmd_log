@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Instruction_Decoder C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Instruction_Decoder.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/Instruction_Decoder.sym 

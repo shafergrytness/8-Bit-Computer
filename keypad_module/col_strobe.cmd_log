@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../FinalComputer/col_strobe.vhd -prj keypad_module -o col_strobe.spl -module col_strobe -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e col_strobe.spl C:/Users/Shafer/Desktop/FinalComputer/keypad_module/col_strobe.sym 

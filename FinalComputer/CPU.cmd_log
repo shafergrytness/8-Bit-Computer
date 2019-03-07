@@ -1,0 +1,10 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU I:/Final/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sch C:/Users/Shafer/Desktop/FinalComputer/FinalComputer/CPU.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl CPU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl CPU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch} 
+sch2sym -intstyle ise -family spartan3e -w -refsym CPU {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch} {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sym} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl CPU_drc.vhf -w {C:/Users/Shafer/Desktop/FinalComputer testing ALU/FinalComputer/CPU.sch} 
