@@ -39,10 +39,13 @@ After the memory programming is done, the switch for Run Mode or Program Mode ca
 | FF            | RST      | Reset to address 0 |
 
 Top level schematic
-![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/toplevel.png)
+
+![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/toplevel.png "Top level schematic")
 
 CPU
-![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/cpu.png)
+
+![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/cpu.png "CPU")
 
 ALU
-![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/alu.png)
+
+![alt text](https://github.com/shafergrytness/8-Bit-Computer/blob/master/Screenshots/alu.png "ALU")
