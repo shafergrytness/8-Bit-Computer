@@ -1,7 +1,7 @@
 # 8-Bit-Computer
 Made for deployment on Digilent's Basys FPGA board
 
-This fully programmable computer supports 14 instructions that mainly deal with the performance of signed and unsigned arithmetic. The computer by default runs at 4 Hz during Run Mode with each instruction taking four 1 Hz internal cycles to execute so output can be easily read and verified every four seconds. In Run Mode, the computer continues sequentially performing the instructions from address 0 to 32. The computer features four data registers (R0-R3) for storage during runtime and two status registers to indicate overflow and negative results.
+This fully programmable computer supports 14 instructions that mainly deal with the performance of signed and unsigned arithmetic. The computer by default runs at 4 Hz during Run Mode with each instruction taking four 1 Hz internal cycles to execute so output can be easily read and verified every four seconds. In Run Mode, the computer continues sequentially performing the instructions from address 0 to 32. The computer features four data registers (R0-R3) for storage during runtime and two status registers to indicate overflow and negative results with the on-board lights.
 
 ## Operation
 
