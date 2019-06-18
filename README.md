@@ -1,5 +1,5 @@
 # 8-Bit-Computer
-Made for deployment on Digilent's Basys FPGA board.
+Created in [Xilinx ISE](https://www.xilinx.com/products/design-tools/ise-design-suite.html) and made for deployment on [Digilent's Basys FPGA board](https://store.digilentinc.com/basys-fpga-board-retired/).
 
 This fully programmable computer supports 14 instructions that mainly deal with the performance of signed and unsigned arithmetic. By default, the computer runs at 4 Hz during Run Mode with each instruction taking four 1 Hz internal cycles to complete. Output can be easily read and verified every four seconds, or the switch for clock speed can be toggled to more quickly execute the written program. 
 
